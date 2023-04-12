@@ -1,5 +1,8 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 
+body{
+  font-family: monospace;
+}
 .sidenav-top {
     height: 5vh; 
     width: 96vw; 
@@ -36,9 +39,9 @@
   }
   
   .sidenav-bot a {
-    padding: 6px 8px 6px 16px;
+    padding: 1vh 1vw 1vh 1vw;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2vb;
     color: bisque;
     display: block; 
   }
@@ -51,7 +54,7 @@
   #links{
     opacity: 0;
     transition: opacity 2s; 
-    padding-top: 8vh;
+    padding-top: 9vh;
     visibility: hidden;
   }
 
@@ -73,7 +76,7 @@
 
   .typer{
     display: flex;
-    padding-left: 30vw;
+    padding-left: 24vw;
     padding-top: 9vh;
     padding-bottom: 3vh;
     color: white
@@ -91,13 +94,70 @@
   }
 
   .content {
-    color: #5194e0;
-    opacity: 0.9;
+    color: bisque;
     height: 75vh;
     width: 75vw;
     padding: 1vh 1vh 1vh 2vh;
-    background-color: #25394d;
-    -webkit-box-shadow: 5px 0px 70px 12px rgb(87, 48, 161);
-    -moz-box-shadow: 5px 0px 70px 12px rgba(87, 48, 161, 1);
-    box-shadow: 5px 0px 70px 12px rgba(87, 48, 161, 1);   
+    background-color: rgba(31, 73, 117, 0.7);
+    -webkit-box-shadow: 0px 0px 100px 40px rgba(31, 73, 117, 1);
+    -moz-box-shadow: 0px 0px 100px 40px rgba(31, 73, 117, 1);
+    box-shadow: 0px 0px 100px 40px rgba(31, 73, 117, 1);  
+    border-radius: 1%;
+  }
+
+  .text{
+    opacity: 1;
+    transition: opacity 2s; 
+  }
+
+  .words-typer {
+    width: 15ch;
+    animation: typing 3s steps(15), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  .footer {
+	  height: 5vh;
+	  width: 82vw;
+    color: rgb(250, 209, 158);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+	}	
+
+  #circle {
+    border-radius: 50%;
+	  height: 5vh;
+	  width: 5vh;
+	  border: 2px solid rgb(250, 209, 158);
+  }
+
+  .fa-id-card {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+  }
+
+  #contact{
+    opacity: 0;
+    transition: opacity 1s; 
+    margin-top: 30vh;
+    margin-left: 65vw;
+    width: 15vw;
+    height: 35vh;
+    visibility: hidden;
+    background-color: rgb(250, 209, 158);
+    border-radius: 2%;
+  }
+
+  #contact.fade {
+    opacity: 0.7;
+    visibility: visible;
   }

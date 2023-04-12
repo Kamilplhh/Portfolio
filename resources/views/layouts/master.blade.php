@@ -17,9 +17,9 @@
                     <a href="#">About</a>
                     <a href="#">Contact</a>
                     <a href="#">Partial CV</a>
-                    <a href="#"><i class="fa-brands fa-github" style="padding-top: 2vh"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram" style="padding-top: 0.3vh"></i></a>
-                    <a href="#"><i class="fa-brands fa-discord" style="padding-top: 0.3vh"></i>  </a>
+                    <a href="https://github.com/Kamilplhh" target="_blank"><i class="fa-brands fa-github" style="padding-top: 2vh"></i></a>
+                    <a href="https://www.instagram.com/kamil_plhh/" target="_blank"><i class="fa-brands fa-instagram" style="padding-top: 0.3vh"></i></a>
+                    <a id="discord"><i class="fa-brands fa-discord" style="padding-top: 0.3vh"></i>  </a>
                 </div> 
             </div> 
         </div>     
@@ -31,8 +31,17 @@
 
             <div class="content">
                 @yield('content')
+                <div id="contact">
+                    <h2 style="color:black">Hi!<br>
+                    If u like what u see you can contact me or just follow me on me socials!</h2>
+                </div>
             </div>   
 
+            <div class="footer">
+                <div id="circle">
+                    <i id="logo" class="fa-regular fa-id-card fa-beat-fade fa-xl"></i>
+                </div>               
+            </div>
         </div>
     </body>
 </html>
