@@ -26,7 +26,7 @@ body{
     margin-top: 5vh;
     padding-top: 3vh;
     height: 95vh; 
-    width: 10vw; 
+    width: 14vw; 
     position: fixed; 
     z-index: 1; 
     top: 0; 
@@ -48,12 +48,12 @@ body{
   
   .sidenav-bot a:hover {
     color: #f1f1f1;
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
   
   #links{
     opacity: 0;
-    transition: opacity 2s; 
+    transition: opacity 1s; 
     padding-top: 9vh;
     visibility: hidden;
   }
@@ -76,7 +76,7 @@ body{
 
   .typer{
     display: flex;
-    padding-left: 24vw;
+    padding-left: 25vw;
     padding-top: 9vh;
     padding-bottom: 3vh;
     color: white
@@ -94,15 +94,18 @@ body{
   }
 
   .content {
-    color: bisque;
+    color: rgb(255, 229, 196);
     height: 75vh;
     width: 75vw;
     padding: 1vh 1vh 1vh 2vh;
     background-color: rgba(31, 73, 117, 0.7);
-    -webkit-box-shadow: 0px 0px 100px 40px rgba(31, 73, 117, 1);
-    -moz-box-shadow: 0px 0px 100px 40px rgba(31, 73, 117, 1);
-    box-shadow: 0px 0px 100px 40px rgba(31, 73, 117, 1);  
+    -webkit-box-shadow: 0px 0px 100px 40px rgb(25, 64, 105);
+    -moz-box-shadow: 0px 0px 100px 40px rgba(25, 64, 105, 1);
+    box-shadow: 0px 0px 100px 40px rgba(25, 64, 105, 1);  
     border-radius: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .text{
@@ -111,12 +114,44 @@ body{
   }
 
   .words-typer {
-    width: 15ch;
-    animation: typing 3s steps(15), blink .5s step-end infinite alternate;
+    width: 19ch;
+    animation: typing 2s steps(19), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
   }
   
+  .next {
+    width: 70ch;
+    animation: typing 4s steps(70), blink .5s step-end infinite alternate;
+  }
+
+  #name{
+    margin-bottom: 3vh;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0.5vh 0vw 1vh 0.3vw;
+    margin: 0; 
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  #motto {
+    animation: fadeIn 10s;
+    padding-top: 10vh;
+    padding-bottom: 1vh;  
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
   @keyframes typing {
     from {
       width: 0
@@ -125,8 +160,8 @@ body{
       
   .footer {
 	  height: 5vh;
-	  width: 82vw;
-    color: rgb(250, 209, 158);
+	  width: 79vw;
+    color: bisque;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -136,7 +171,7 @@ body{
     border-radius: 50%;
 	  height: 5vh;
 	  width: 5vh;
-	  border: 2px solid rgb(250, 209, 158);
+	  border: 2px solid bisque;
   }
 
   .fa-id-card {
@@ -148,16 +183,57 @@ body{
   #contact{
     opacity: 0;
     transition: opacity 1s; 
-    margin-top: 30vh;
-    margin-left: 65vw;
-    width: 15vw;
-    height: 35vh;
+    margin-top: 4vh;
+    margin-left: 62vw;
+    width: 16vw;
+    height: 14vh;
     visibility: hidden;
-    background-color: rgb(250, 209, 158);
-    border-radius: 2%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6%;
+    padding: 1vh 0.4vw 0vh 0.4vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.4vb;
+    color: black;
+  }
+
+  #contact a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #contact a:hover{
+    color: rgb(250, 209, 158);
   }
 
   #contact.fade {
-    opacity: 0.7;
+    opacity: 0.9;
     visibility: visible;
+  }
+
+  #pfp {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  #contact-left {
+    width: 3vw;
+  }
+
+  #contact-top {
+    background-color: rgb(175, 170, 170);
+    height: 7vh;
+    width: 12vw;
+    border-radius: 4%;
+    padding: 1vh 0vw 0vh 0.5vw;
+  }
+
+  #contact-bot {
+    background-color: rgb(175, 170, 170);
+    height: 4vh;
+    width: 12vw;
+    margin-left: 3vw;
+    border-radius: 6%;
+    padding: 1vh 0vw 0vh 0.5vw;
   }
