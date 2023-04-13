@@ -40,8 +40,7 @@
                     </div>
                     <div id="contact-bot">                      
                         <a href="/Contact">Contact</a> with me
-                    </div>
-                    
+                    </div>                   
                 </div>
             </div>   
 

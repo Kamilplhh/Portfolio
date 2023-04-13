@@ -1,0 +1,30 @@
+.content {
+    justify-content: space-between;
+}
+
+#project-bg {
+    width: 22vw;
+    height: 30vh;
+    background-color: rgba(124, 122, 122, 0.9);
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#project {
+    width: 21vw;
+    height: 29vh;
+    background-color: white;
+    border-radius: 2%;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+#project-description {
+    width: 21vw;
+    height: 11vh;
+    background-color: black;
+}

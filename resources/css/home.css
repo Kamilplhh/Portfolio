@@ -1,0 +1,44 @@
+.words-typer {
+    width: 19ch;
+    animation: typing 2s steps(19), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .next {
+    width: 70ch;
+    animation: typing 4s steps(70), blink .5s step-end infinite alternate;
+  }
+
+  #name{
+    margin-bottom: 3vh;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0.5vh 0vw 1vh 0.3vw;
+    margin: 0; 
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  #motto {
+    animation: fadeIn 10s;
+    padding-left: 2vw;
+    max-width: 70vw;
+    padding-top: 10vh;
+    padding-bottom: 1vh;  
+    inline-size: 100%;
+    display: inline-block;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
