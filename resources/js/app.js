@@ -32,3 +32,9 @@ const contact = document.getElementById("contact");
 circle.addEventListener("click", function () {
     contact.classList.toggle('fade');
 });
+
+const project = document.getElementById("project");
+
+project.addEventListener("click", function () {
+    //place replaceWith here
+});
