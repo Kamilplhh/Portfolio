@@ -34,7 +34,8 @@ circle.addEventListener("click", function () {
 });
 
 const project = document.getElementById("project");
+const projectDesc = document.getElementById("project-description")
 
 project.addEventListener("click", function () {
-    //place replaceWith here
+    projectDesc.classList.toggle("visible");
 });
