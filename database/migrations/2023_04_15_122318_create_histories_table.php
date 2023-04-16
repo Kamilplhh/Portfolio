@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('histories', function (Blueprint $table) {
             $table->id();
-            $table->date('started');
+            $table->date('started')->nullable();
             $table->date('ended')->nullable();
             $table->text('description')->nullable();
             $table->text('type');

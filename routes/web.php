@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\HistoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +21,7 @@ Route::get('/', function () {
 
 Route::get('/Projects', [ProjectController::class, 'getAll']);
 
-Route::get('/CV', function () {
-    return view('CV');
-});
+Route::get('/CV', [HistoryController::class, 'getAll']);
 
 Route::get('/Contact', function () {
     return view('Contact');

@@ -33,9 +33,14 @@ circle.addEventListener("click", function () {
     contact.classList.toggle('fade');
 });
 
-const project = document.getElementById("project");
-const projectDesc = document.getElementById("project-description")
+const projects = document.getElementsByClassName("project");
 
-project.addEventListener("click", function () {
-    projectDesc.classList.toggle("visible");
-});
+
+for (const project of projects){
+    project.addEventListener("click", function () {
+        var id = this.id;
+        const projectDesc = document.getElementById("project-description -" + id);
+        projectDesc.classList.toggle("visible");
+        console.log(projectDesc);
+    });
+}

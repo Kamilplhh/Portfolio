@@ -6,10 +6,10 @@
 
 @foreach($projects as $project)
 <div id="project-bg">
-    <div id="project" style="background-image: url( {{ $project->src }} ); background-size:cover;">
-        <div id="project-description">
+    <div class="project" id="{{ $project->id }}" style="background-image: url({{ url('images/'.$project->src) }}); background-size:cover; background-size:21vw 26vh;">
+        <div class="project-description" id="project-description -{{ $project->id }}">
             {{ $project->description }}<br>
-            <a href="{{ $project->url }}">Github</a>
+            <a href="{{ $project->url }}" target="_blank">Project</a>
         </div>
     </div>
     {{ $project->name }}

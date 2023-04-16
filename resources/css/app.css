@@ -88,7 +88,7 @@ body {
 
 #typed {
   padding-left: 1vw;
-  color: yellow;
+  color: #00a1ff;
 }
 
 .m-container {
@@ -111,6 +111,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
+  animation: fadeIn 2s;
 }
 
 .text {
@@ -197,4 +198,9 @@ body {
   margin-left: 3vw;
   border-radius: 6%;
   padding: 1vh 0vw 0vh 0.5vw;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

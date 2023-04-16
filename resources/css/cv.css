@@ -1,42 +1,18 @@
 .content {
-    display: flex;
-
+    padding: 1vh;
 }
 
-#project-bg {
-    width: 22vw;
-    height: 30vh;
-    background-color: rgba(124, 122, 122, 0.9);
-    border-radius: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    padding-top: 1vh;
+.jobs{
+    width: 75vw;
+    animation: fadeIn 6s;
 }
 
-#project {
-    width: 21vw;
-    height: 26vh;
-    background-color: white;
-    border-radius: 2%;
-    display: flex;
-    align-items: flex-end;
-    align-content: flex-end;
+.skills{
+    width: 75vw;
+    animation: fadeIn 8s;
 }
 
-#project-bg:hover{
-    transform: scale(1.05);
-}
-
-#project-description {
-    width: 21vw;
-    height: 26vh;
-    background-color: black;
-    position: absolute;
-    opacity: 0.7;
-    visibility: hidden;
-    transition: opacity 1s;
-    border-radius: 2%;
+.education{
+    width: 75vw;
+    animation: fadeIn 10s;
 }

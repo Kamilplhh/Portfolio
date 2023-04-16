@@ -3,22 +3,30 @@
 @section('title', 'CV')
 
 @section('content')
-<div>
+<div class="jobs">
     <center><h2>Jobs</h2></center>
-    <ul>
-        <li></li>
+    <ul class="words-typer">
+        @foreach($jobs as $job)
+        <li>{{ $job->description }}<br>
+        {{ $job->started }} - {{ $job->ended }}</li>
+        @endforeach
     </ul>
 </div>
-<div>
+<div class="education">
     <center><h2>Education</h2></center>
     <ul>
-        <li></li>
+        @foreach($educations as $education)
+        <li>{{ $education->description }}<br>
+        {{ $education->started }} - {{ $education->ended }}</li>
+        @endforeach
     </ul>
 </div>
-<div>
+<div class="skills">
     <center><h2>Skills</h2></center>
     <ul>
-        <li></li>
+        @foreach($skills as $skill)
+        <li>{{ $skill->description }}</li>
+        @endforeach
     </ul>
 </div>
 
