@@ -3,7 +3,7 @@
 @section('title', 'Contact')
 
 @section('content')
-<div class="container mt-5">
+<div class="mail">
 @if (session('status'))
     <div class="alert alert-success">
         {{ session('status') }}
@@ -13,19 +13,16 @@
             @csrf
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" name="name" id="name">
-            </div>
-            <div class="form-group">
+                <input type="text" style="width: 13vw;" name="name" id="name" required>
+
                 <label>Email</label>
-                <input type="email" class="form-control" name="email" id="email">
-            </div>
-            <div class="form-group">
+                <input type="email" style="width: 13vw;" name="email" id="email" required><br>
+            
                 <label>Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject">
-            </div>
-            <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" required>
+
                 <label>Message</label>
-                <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
             </div>
             <input type="submit" value="Send Message" class="btn btn-dark btn-block">
         </form>
