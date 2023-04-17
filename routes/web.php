@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\HistoryController;
 use Illuminate\Support\Facades\Route;
@@ -23,6 +24,9 @@ Route::get('/Projects', [ProjectController::class, 'getAll']);
 
 Route::get('/CV', [HistoryController::class, 'getAll']);
 
+
 Route::get('/Contact', function () {
     return view('Contact');
 });
+
+Route::post('/Contact', [ContactController::class, 'sendEmail'])->name('send.email');
